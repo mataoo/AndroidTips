@@ -27,16 +27,16 @@
             // Set content view, etc.
             ViewServer.get(this).addWindow(this);
         }
+        
+        public void onResume() {
+            super.onResume();
+            ViewServer.get(this).setFocusedWindow(this);
+        }
 
         public void onDestroy() {
             super.onDestroy();
             ViewServer.get(this).removeWindow(this);
         }
-
-        public void onResume() {
-            super.onResume();
-            ViewServer.get(this).setFocusedWindow(this);
-        }
     }
     ```
-4. 运行App后，在终端输入hierarchyviewer启动
+4. 运行App后，在终端输入**hierarchyviewer**启动
