@@ -39,3 +39,4 @@
         }
     }
     ```
+4. 运行App后，在终端输入hierarchyviewer启动
