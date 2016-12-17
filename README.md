@@ -1,6 +1,6 @@
 # AndroidTips
 ### 非root Android手机上无法使用ViewHierachy
-####使用ViewServer
+#### 使用ViewServer
 
 [https://github.com/romainguy/ViewServer](https://github.com/romainguy/ViewServer)
 
@@ -27,7 +27,7 @@
             // Set content view, etc.
             ViewServer.get(this).addWindow(this);
         }
-        
+
         public void onResume() {
             super.onResume();
             ViewServer.get(this).setFocusedWindow(this);
@@ -40,3 +40,5 @@
     }
     ```
 4. 运行App后，在终端输入**hierarchyviewer**启动
+
+---
